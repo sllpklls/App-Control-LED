@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    android:background="@drawable/gradient_background">
+
+    <!-- TextView tiêu đề -->
+    <TextView
+        android:id="@+id/tx_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LED Effects Controller by Hoang Thai"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="#3F51B5"
+        android:layout_marginBottom="12dp"
+        android:elevation="4dp"/>
+
+    <!-- GridLayout chứa các button -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:padding="8dp"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btn_rainbow"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Rainbow" />
+
+        <Button
+            android:id="@+id/btn_single_red"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#FF0000"
+            android:text="Red" />
+
+        <Button
+            android:id="@+id/btn_single_blue"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#2196F3"
+            android:text="Blue" />
+
+        <Button
+            android:id="@+id/btn_single_green"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="Green" />
+
+        <Button
+            android:id="@+id/btn_single_yellow"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#FFEB3B"
+            android:text="Yellow" />
+
+        <Button
+            android:id="@+id/btn_single_orange"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#FF9800"
+            android:text="Orange" />
+
+        <Button
+            android:id="@+id/btn_single_purple"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#9C27B0"
+            android:text="Purple" />
+
+        <Button
+            android:id="@+id/btn_single_pink"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E91E63"
+            android:text="Pink" />
+
+        <Button
+            android:id="@+id/btn_blue_sea"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#2196F3"
+            android:text="Blue Sea" />
+
+
+        <Button
+            android:id="@+id/btn_blue_wave"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#2196F3"
+            android:text="Blue Wave" />
+
+        <Button
+            android:id="@+id/btn_green_wave"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="Green Wave" />
+
+        <Button
+            android:id="@+id/btn_red_wave"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#FF0000"
+            android:text="Red Wave" />
+
+        <Button
+            android:id="@+id/btn_wave1"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Wave 1" />
+
+        <Button
+            android:id="@+id/btn_wave2"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Wave 2" />
+
+        <Button
+            android:id="@+id/btn_wave3"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Wave 3" />
+        <Button
+            android:id="@+id/btn_wave"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Wave" />
+
+
+        <Button
+            android:id="@+id/btn_random_blink"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Random Blink" />
+
+        <Button
+            android:id="@+id/btn_audi"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Audi" />
+
+        <Button
+            android:id="@+id/btn_audi_red"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_columnWeight="1"
+            android:backgroundTint="#FF0000"
+            android:text="Audi Red" />
+
+        <Button
+            android:id="@+id/btn_audi_green"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="Audi Green" />
+
+        <Button
+            android:id="@+id/btn_audi_blue"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#2196F3"
+            android:text="Audi Blue" />
+
+        <Button
+            android:id="@+id/btn_audi1"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Audi 1" />
+
+        <Button
+            android:id="@+id/btn_audi2"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Audi 2" />
+
+        <Button
+            android:id="@+id/btn_audi3"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Audi 3" />
+
+        <Button
+            android:id="@+id/btn_blue_circle"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_columnWeight="1"
+            android:backgroundTint="#2196F3"
+            android:text="Blue Circle" />
+
+        <Button
+            android:id="@+id/btn_red_circle"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_columnWeight="1"
+            android:backgroundTint="#FF0000"
+            android:text="Red Circle" />
+
+        <Button
+            android:id="@+id/btn_green_circle"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="Green Circle" />
+
+        <Button
+            android:id="@+id/btn_circle1"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Circle 1" />
+
+        <Button
+            android:id="@+id/btn_circle2"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Circle 2" />
+
+        <Button
+            android:id="@+id/btn_circle3"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Circle 3" />
+
+        <Button
+            android:id="@+id/btn_swirl"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Swirl" />
+
+        <Button
+            android:id="@+id/btn_bloom"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Bloom" />
+        <Button
+            android:id="@+id/btn_ledbyled"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Led by Led" />
+
+        <Button
+            android:id="@+id/btn_heartbeat_red"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_columnWeight="1"
+            android:backgroundTint="#FF0000"
+            android:text="Red Heart Beat" />
+
+        <Button
+            android:id="@+id/btn_heartbeat_green"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="Green Heart Beat" />
+
+        <Button
+            android:id="@+id/btn_heartbeat_blue"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_columnWeight="1"
+            android:backgroundTint="#2196F3"
+            android:text="Blue Heart Beat" />
+
+        <Button
+            android:id="@+id/btn_heartbeat1"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Heart Beat 1" />
+
+        <Button
+            android:id="@+id/btn_heartbeat2"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Heart Beat 2" />
+
+        <Button
+            android:id="@+id/btn_heartbeat3"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Heart Beat 3" />
+
+
+
+        <Button
+            android:id="@+id/btn_tail_flash"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Tail Flash" />
+
+        <Button
+            android:id="@+id/btn_moving_rainbow"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Moving Rainbow" />
+
+        <Button
+            android:id="@+id/btn_fire_tail"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Fire Tail" />
+
+        <Button
+            android:id="@+id/btn_following_light"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Following Light" />
+
+
+    </GridLayout>
+</LinearLayout>
+</ScrollView>
